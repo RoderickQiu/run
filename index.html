@@ -106,7 +106,7 @@
     let tomorroww=tomorrow().split(' ')[0]
     let yesterdayy=yesterday().split(' ')[0]
     if(date.getHours()>4){
-        dateLine.innerHTML=today+" 08:30 至 "+today+" 23:30"
+        dateLine.innerHTML=today+" 08:30 至 "+today+" 23:50"
     }else{dateLine.innerHTML=yesterdayy+" 08:30 至 "+today+" 03:30"}
 
     //生成背景
@@ -116,7 +116,7 @@
     b.height = 55;
     let c = b.getContext("2d");
     c.rotate(-15 * Math.PI / -180);
-    c.font = "18px Vedana";
+    c.font = "18px Verdana";
     // c.fillStyle = "rgba(1, 187, 44, 0.40)";
     c.fillStyle = "rgba(245, 56, 42, 0.40)";
     c.textAlign = "left";
@@ -130,7 +130,7 @@
     b1.height = 55;
     let c1 = b1.getContext("2d");
     c1.rotate(-15 * Math.PI / -180);
-    c1.font = "18px Vedana";
+    c1.font = "18px Verdana";
     c1.fillStyle = "rgba(1, 187, 44, 0.40)";
     // c1.fillStyle = "rgba(245, 56, 42, 0.40)";
     c1.textAlign = "left";
@@ -142,8 +142,6 @@
     document.getElementById('1').style.background = "url(" + b.toDataURL("image/png") + ") left top repeat";
 
     document.getElementById('2').style.background = "url(" + b.toDataURL("image/png") + ") left top repeat";
-
-    document.getElementById('3').style.background = "url(" + b.toDataURL("image/png") + ") left top repeat";
 
     let t = document.getElementsByClassName('title h60')[0];
     t.classList.replace('red', 'green');
